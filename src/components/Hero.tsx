@@ -2,8 +2,18 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Users, Heart, MapPin } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const scrollToFeatures = () => {
+    const featuresSection = document.querySelector('#features');
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Background Gradient */}
@@ -18,7 +28,7 @@ const Hero = () => {
 
       {/* Navigation */}
       <nav className="relative z-10 flex justify-between items-center p-6 lg:px-12">
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-4">
           <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
             <Heart className="w-6 h-6 text-purple-600" />
           </div>
@@ -51,6 +61,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animation-delay-500">
               <Button 
                 size="lg" 
+                onClick={() => navigate('/signup')}
                 className="bg-white text-purple-600 hover:bg-purple-50 text-lg px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 <Users className="w-5 h-5 ml-2" />
@@ -59,6 +70,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
+                onClick={scrollToFeatures}
                 className="border-white text-white hover:bg-white hover:text-purple-600 text-lg px-8 py-4 rounded-full font-semibold transition-all duration-300"
               >
                 למד עוד
@@ -84,8 +96,11 @@ const Hero = () => {
           {/* Right Content - Phone Mockup */}
           <div className="relative lg:scale-110 animate-fade-in animation-delay-700">
             <div className="relative mx-auto w-80 h-[640px] bg-gray-900 rounded-[3rem] shadow-2xl">
-              <div className="absolute inset-x-0 top-0 h-6 bg-gray-900 rounded-t-[3rem]"></div>
-              <div className="absolute top-6 inset-x-4 bottom-4 bg-gradient-to-b from-blue-500 to-purple-600 rounded-[2.3rem] overflow-hidden">
+              {/* Improved phone top design */}
+              <div className="absolute inset-x-0 top-0 h-8 bg-gray-900 rounded-t-[3rem] flex items-center justify-center">
+                <div className="w-16 h-1 bg-gray-700 rounded-full"></div>
+              </div>
+              <div className="absolute top-8 inset-x-4 bottom-4 bg-gradient-to-b from-blue-500 to-purple-600 rounded-[2.3rem] overflow-hidden">
                 
                 {/* Status Bar */}
                 <div className="flex justify-between items-center p-4 text-white text-sm">
