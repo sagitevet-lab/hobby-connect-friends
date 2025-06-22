@@ -28,7 +28,7 @@ const Hero = () => {
 
       {/* Navigation */}
       <nav className="relative z-10 flex justify-between items-center p-6 lg:px-12">
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-6">
           <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
             <Heart className="w-6 h-6 text-purple-600" />
           </div>
@@ -71,7 +71,7 @@ const Hero = () => {
                 size="lg" 
                 variant="outline" 
                 onClick={scrollToFeatures}
-                className="border-white text-white hover:bg-white hover:text-purple-600 text-lg px-8 py-4 rounded-full font-semibold transition-all duration-300"
+                className="border-2 border-white text-white hover:bg-white hover:text-purple-600 text-lg px-8 py-4 rounded-full font-semibold transition-all duration-300"
               >
                 למד עוד
               </Button>
