@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Heart, Mail, Phone, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
 
@@ -18,7 +17,7 @@ const Footer = () => {
             <p className="text-gray-400 leading-relaxed">
               הפלטפורמה המובילה בישראל ליצירת חברויות חדשות דרך תחביבים משותפים. מחברים לבבות ויוצרים קהילות.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 space-x-reverse">
               <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors cursor-pointer">
                 <Facebook className="w-5 h-5" />
               </div>
@@ -79,7 +78,7 @@ const Footer = () => {
           <p className="text-gray-400 mb-4 md:mb-0">
             © 2024 חיבור. כל הזכויות שמורות.
           </p>
-          <div className="flex space-x-6">
+          <div className="flex space-x-6 space-x-reverse">
             <a href="#" className="text-gray-400 hover:text-white transition-colors">תנאי שימוש</a>
             <a href="#" className="text-gray-400 hover:text-white transition-colors">מדיניות פרטיות</a>
             <a href="#" className="text-gray-400 hover:text-white transition-colors">עוגיות</a>

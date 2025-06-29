@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { UserPlus, Search, MessageCircle, Users } from 'lucide-react';
 
@@ -31,7 +30,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 relative overflow-hidden">
+    <section id="how-it-works" className="py-20 bg-gradient-to-r from-purple-600 via-blue-600 to-pink-600 relative overflow-hidden">
       {/* Background Animation */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse"></div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Star, Users, MessageCircle, Camera, Music, Book, Gamepad2, Mountain } from 'lucide-react';
 
@@ -34,7 +33,7 @@ const CommunitySection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="hobbies" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Testimonials */}
         <div className="text-center mb-16">

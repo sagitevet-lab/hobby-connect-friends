@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Users, Heart, MapPin } from 'lucide-react';
@@ -11,6 +10,34 @@ const Hero = () => {
     const featuresSection = document.querySelector('#features');
     if (featuresSection) {
       featuresSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToHobbies = () => {
+    const hobbiesSection = document.querySelector('#hobbies');
+    if (hobbiesSection) {
+      hobbiesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToDownload = () => {
+    const downloadSection = document.querySelector('#download');
+    if (downloadSection) {
+      downloadSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToContact = () => {
+    const footer = document.querySelector('footer');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToHowItWorks = () => {
+    const howItWorksSection = document.querySelector('#how-it-works');
+    if (howItWorksSection) {
+      howItWorksSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -28,17 +55,17 @@ const Hero = () => {
 
       {/* Navigation */}
       <nav className="relative z-10 flex justify-between items-center p-6 lg:px-12">
-        <div className="flex items-center space-x-6">
+        <div className="flex items-center space-x-2 space-x-reverse">
           <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
             <Heart className="w-6 h-6 text-purple-600" />
           </div>
           <span className="text-2xl font-bold text-white">חיבור</span>
         </div>
-        <div className="hidden md:flex space-x-8 text-white">
-          <a href="#" className="hover:text-purple-200 transition-colors">מצא חברים</a>
-          <a href="#" className="hover:text-purple-200 transition-colors">תחביבים</a>
-          <a href="#" className="hover:text-purple-200 transition-colors">הורדה</a>
-          <a href="#" className="hover:text-purple-200 transition-colors">יצירת קשר</a>
+        <div className="hidden md:flex space-x-6 text-white space-x-reverse">
+          <button onClick={scrollToHowItWorks} className="hover:text-purple-200 transition-colors cursor-pointer">מצא חברים</button>
+          <button onClick={scrollToHobbies} className="hover:text-purple-200 transition-colors cursor-pointer">תחביבים</button>
+          <button onClick={scrollToDownload} className="hover:text-purple-200 transition-colors cursor-pointer">הורדה</button>
+          <button onClick={scrollToContact} className="hover:text-purple-200 transition-colors cursor-pointer">יצירת קשר</button>
         </div>
       </nav>
 
@@ -69,9 +96,8 @@ const Hero = () => {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline" 
                 onClick={scrollToFeatures}
-                className="border-2 border-white text-white hover:bg-white hover:text-purple-600 text-lg px-8 py-4 rounded-full font-semibold transition-all duration-300"
+                className="bg-white text-purple-600 hover:bg-purple-50 text-lg px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 למד עוד
               </Button>
