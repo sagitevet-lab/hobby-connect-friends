@@ -47,11 +47,9 @@ const Signup = () => {
           <span className="text-2xl font-bold text-white">חיבור</span>
         </div>
         <Button 
-          variant="outline"
           onClick={() => navigate('/')}
-          className="border-white text-white hover:bg-white hover:text-purple-600 transition-all duration-300"
+          className="bg-white text-purple-600 hover:bg-purple-50 text-lg px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
         >
-          <ArrowRight className="w-4 h-4 ml-2" />
           חזור לעמוד הראשי
         </Button>
       </nav>
