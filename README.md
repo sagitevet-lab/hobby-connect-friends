@@ -62,6 +62,34 @@ This project is built with:
 
 ## How can I deploy this project?
 
+### GitHub Pages Deployment
+
+This project is configured for automatic deployment to GitHub Pages. Here are the deployment options:
+
+#### Automatic Deployment (Recommended)
+1. Push your changes to the `main` branch
+2. GitHub Actions will automatically build and deploy to GitHub Pages
+3. Your site will be available at: `https://<your-username>.github.io/hobby-connect-friends/`
+
+#### Manual Deployment
+```sh
+# Deploy to GitHub Pages
+npm run deploy
+
+# Deploy with development build
+npm run deploy:dev
+```
+
+#### Pre-deployment Steps
+```sh
+# Build the project
+npm run build
+
+# Preview the build locally
+npm run preview
+```
+
+### Lovable Deployment
 Simply open [Lovable](https://lovable.dev/projects/ec79303c-1325-4d97-bd22-db41ab7fd398) and click on Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?

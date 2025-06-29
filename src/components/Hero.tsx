@@ -103,10 +103,10 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="flex items-center space-x-8 pt-8">
+            <div className="flex items-center space-x-8 space-x-reverse pt-8">
               <div className="text-center">
                 <div className="text-3xl font-bold">50K+</div>
-                <div className="text-blue-200">משתמשים פעילים</div>
+                <div className="text-blue-200">משתמשים</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold">200+</div>
@@ -131,7 +131,7 @@ const Hero = () => {
                 {/* Status Bar */}
                 <div className="flex justify-between items-center p-4 text-white text-sm">
                   <span>9:30</span>
-                  <div className="flex space-x-1">
+                  <div className="flex space-x-1 space-x-reverse">
                     <div className="w-4 h-2 bg-white rounded-sm"></div>
                     <div className="w-4 h-2 bg-white rounded-sm"></div>
                     <div className="w-4 h-2 bg-white rounded-sm"></div>
@@ -140,7 +140,7 @@ const Hero = () => {
 
                 {/* Chat Interface */}
                 <div className="p-6 space-y-4">
-                  <div className="flex items-center space-x-3">
+                  <div className="flex items-center space-x-3 space-x-reverse">
                     <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
                       <span className="text-white font-bold">א</span>
                     </div>
@@ -155,7 +155,7 @@ const Hero = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-3">
+                  <div className="flex items-center space-x-3 space-x-reverse">
                     <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
                       <span className="text-white font-bold">א</span>
                     </div>

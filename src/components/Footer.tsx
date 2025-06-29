@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 space-x-reverse">
               <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
                 <Heart className="w-6 h-6 text-white" />
               </div>
@@ -58,15 +58,15 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6">יצירת קשר</h3>
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 space-x-reverse">
                 <Mail className="w-5 h-5 text-purple-400" />
                 <span className="text-gray-400">hello@hiburmedia.co.il</span>
               </div>
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 space-x-reverse">
                 <Phone className="w-5 h-5 text-purple-400" />
                 <span className="text-gray-400">03-1234567</span>
               </div>
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 space-x-reverse">
                 <MapPin className="w-5 h-5 text-purple-400" />
                 <span className="text-gray-400">תל אביב, ישראל</span>
               </div>

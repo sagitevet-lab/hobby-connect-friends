@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Heart, ArrowRight, User, Mail, Phone, MapPin } from 'lucide-react';
@@ -41,7 +40,7 @@ const Signup = () => {
 
       {/* Navigation */}
       <nav className="relative z-10 flex justify-between items-center p-6 lg:px-12">
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 space-x-reverse">
           <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
             <Heart className="w-6 h-6 text-purple-600" />
           </div>

@@ -27,19 +27,19 @@ const DownloadSection = () => {
             </p>
 
             <div className="space-y-6 mb-8">
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-4 space-x-reverse">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                   <Download className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-lg">הורדה חינמית לחלוטין</span>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-4 space-x-reverse">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                   <Smartphone className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-lg">זמין ב-iOS ו-Android</span>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-4 space-x-reverse">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                   <QrCode className="w-6 h-6 text-white" />
                 </div>
@@ -73,7 +73,7 @@ const DownloadSection = () => {
               <div className="grid grid-cols-2 gap-8">
                 <div className="text-center">
                   <div className="text-4xl lg:text-5xl font-bold text-yellow-300 mb-2">50K+</div>
-                  <div className="text-blue-100">משתמשים פעילים</div>
+                  <div className="text-blue-100">משתמשים</div>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl lg:text-5xl font-bold text-pink-300 mb-2">1M+</div>

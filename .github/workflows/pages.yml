@@ -1,0 +1,14 @@
+name: Configure GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  configure-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v4
+        with:
+          static_site_generator: vite 
